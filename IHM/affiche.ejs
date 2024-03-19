@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href ="assets/css/base.css" media="screen" />
+        <link rel = "stylesheet" href ="assets/css/styles_architecture.css" />
+        <script src="assets/js/correctif.js" defer></script>
+    </head>
+    <style>
+            /*contenu header*/
+            header{
+                color: #ee662a;
+                background:white;
+                margin:0;
+                padding:0.8em;
+            }
+            header h1{
+                font-size: 4em;
+                font-weight: normal;
+                margin:0;
+                color: #e74b25;
+
+            }
+            header h2{
+                font-size: 1.5em;
+                font-weight:bold;
+                /* margin: 0 0 2.5em 10em; */
+                color: #e74b25;
+            }
+            header img{
+                float:left;
+                margin-right:3em;
+            }
+            header a {
+                text-decoration: none;
+            }
+
+            /* CSS Document , @charset "utf-8";*/
+            header, section, aside, nav, footer, figure, figcaption{
+            display:block;
+            }
+
+            /* navigation */
+            nav {
+                background-color:#f2662a;
+                height:35px;
+            }
+            nav li{
+                float:left;
+                width:140px;
+                height:35px;
+                background-color:black;
+                text-align: center;
+                border-left: 1px white solid;
+                border-right: 1px white solid;
+                line-height:35px;
+                list-style:none;
+            }
+            nav li a{
+                color:white;
+                text-decoration:none;
+                display:block;
+            }
+            nav li a:hover{
+                background-color:#f0462b;
+                color:#ebebea;
+            }
+
+            /* section */
+            section {
+                width: 800px;
+                float: left;
+            }
+            section p, h1, h2 {
+                margin-left:20px;
+                margin-right:20px;
+            }
+            section h2 {
+                margin-top:15px;
+            }
+
+            /* footer */
+            footer{
+                clear: both;
+                width: 100%;
+                font-size: 10px;
+                background-color: black;
+                height: 118px;
+                padding-top: 10px;
+                border-top:#e2e2e2 solid 2px;
+                border-bottom:#e2e2e2 solid 2px;
+            }
+
+            .page p {
+                color: #ccc;
+                text-align: center;
+            }
+
+                /* article */ 
+            article header{
+                background:none;
+                height:auto;
+                border-bottom:none;
+            }
+            article header h2{
+                color:black;
+                margin: 8px;
+            }
+            article header p{
+                color: gray;
+                margin: 8px;
+            }
+            article footer{
+                background:none;
+                height:auto;
+                border:none;
+            }
+            article footer p{
+                font-size:10px;
+            }
+
+            /* aside */
+            #main_aside{
+                margin-top:15px;
+                float: left;
+                width: 300px;
+                background-color: #378059;
+                padding:7px;
+                color:white;
+                height: 700px;
+            }
+            #article_aside{
+                float: left;
+                width: 12em; /* 1 em est la hauteur de caractère de la police utilisée, unité relative */
+                background: #F9A890;
+                padding: 10px;
+                margin: 0 10px;
+            }
+            #article_aside h3{
+                color:#378059;
+                margin:5px 0 5px 0;
+            }
+            #article_aside p{
+                margin: 0;
+            }
+
+            /*figure */
+            figure {
+                float: right;
+                border: 1px solid gray;
+                padding: 0.25em;
+                margin: 0 1.5em 1.5em 0;
+            }
+            figcaption{
+                text-align:center;
+                font: italic 0.9em Georgia, «Times New Roman», Times, serif;
+            }
+
+            .container{
+                width: 93%;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            @media screen and (min-width: 1000px) {
+                .container {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+            }
+            
+
+            @media screen and (min-width: 600px)  {
+                section  {
+                    width: 600px;
+                }
+                #main_aside {
+                    width: 296px;
+                    height: 834px
+                }
+            } 
+
+            /* formulaire de contact */
+
+
+            .formulaire{
+                width:400px;
+                margin: auto;
+                margin-bottom:5%;
+                margin-top:5%;
+                background-color:grey;
+            }
+
+            .formulaire h1{
+                width: 70%;
+                margin: 0 auto;
+                padding-bottom: 10px;
+            }
+            
+            form {
+                width:100%;
+                padding: 30px;
+                border: 1px solid #f1f1f1;
+                background: #fff;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            } 
+
+
+
+            input[type=submit] {
+                background-color: #e84c34;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            input[type=submit]:hover {
+                background-color: white;
+                color: gray;
+                border: 1px solid grey;
+            }   
+
+            input[type=text], input[type=password], input[type=email], input[type=file]{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            #text{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                margin-top: 5%;
+            }
+            
+            
+    </style>
+    <body>
+        <div class="container"> 
+            <header>
+              <a href="/">
+                  <img src="IHM/thumbnail.png" alt=»logo» />
+                  <h1>HTML5</h1>
+                  <h2>Page modèle exercice</h2>
+              </a>
+            </header>
+      
+            <nav>
+              <ul>
+                  <li><a href="/">ACCUEIL</a></li>
+                  <li><a href="#">A PROPOS</a></li>
+                  <li><a href="/affiche">DATA</a></li>
+                  <li><a href="/formulaire">CONTACT</a></li>
+              </ul>
+            </nav>
+        </div>
+        
+        <h2 id="text">base_formulaire</h2>
+        
+        <section class="affiche">
+
+            <% for(i=0; i<resultat.length; i++) { %> 
+            
+                <p><%= resultat[i].nom %></p>
+                <p><%= resultat[i].email %></p>
+                <p><%= resultat[i].mpasse %></p>
+                <p><%= resultat[i].Confirmer %></p><br>
+
+            <% } %>
+
+        </section>
+
+        <div class="container">
+            <footer class="page">
+                <p>Copyright AFCI NEWSOFT 2012</p>
+                <p>En vous enregistrant ou en utilisant ce site, vous acceptez notre contrat utilisateur et notre
+                charte de Respect de la vie privée.</p>
+            </footer>
+        </div> 
+        
+    </body>
+</html>
+
+
