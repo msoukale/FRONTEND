@@ -85,3 +85,33 @@
 //       }
 //     });
 // });  
+
+
+
+// const express = require("express");
+// const app = express();
+
+
+// app.set("view engine", "ejs")
+// app.set("views", "IHM")
+
+
+// app.get('/',(req,res)=>{
+//   res.status(200).render("architectureSite");
+// })
+
+// app.get('/formulaire',(req,res)=>{
+//     res.status(200).render("formulaire");
+// })
+
+// app.use((req,res)=>{
+//     res.status(404).render("pageIntrouvable");
+// })
+
+// app.listen(3001,function check(error) {
+//     if (error) {
+//     console.log("Erreur....!!!!");
+//     }else {
+//         console.log("serveur connecté....!!!! 3001");
+//     }
+// });
